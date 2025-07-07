@@ -1,16 +1,16 @@
-import { useState } from 'react';
+import { useUser } from './UserContext.jsx';
 import Login from './Login.jsx';
 import HomePage from './HomePage.jsx';
 
 function App() {
-  const [user, setUser] = useState(null);
+  const { user, setUser } = useUser();
 
   if (!user) {
-    return <Login onLogin={setUser} />;
+    return <Login />;
   }
 
   return (
-    <HomePage user={user} />
+    <HomePage />
   );
 }
 

@@ -1,14 +1,16 @@
 import { useState } from 'react';
-import './Login.css'; // optional for styling
+import { useUser } from './UserContext.jsx';
+import './Login.css';
 
-function Login({ onLogin }) {
+function Login() {
   const [firstName, setFirstName] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const { setUser } = useUser();
 
   const handleLogin = () => {
     if (password === 'KingZachy1') {
-      onLogin(firstName);
+      setUser(firstName);
     } else {
       setError('Incorrect password.');
     }
