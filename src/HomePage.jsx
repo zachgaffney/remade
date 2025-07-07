@@ -1,3 +1,4 @@
+import ReceiptSplitter from './ReceiptSplitter';
 import { useUser } from './UserContext';
 import WeatherWidget from './WeatherWidget';
 
@@ -27,6 +28,7 @@ function HomePage() {
 
       {/* Body */}
       <main style={{ padding: '2rem' }}>
+        <ReceiptSplitter />
       </main>
     </div>
   );
