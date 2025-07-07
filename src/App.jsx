@@ -1,13 +1,17 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import Login from './Login.jsx';
+import HomePage from './HomePage.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [user, setUser] = useState(null);
+
+  if (!user) {
+    return <Login onLogin={setUser} />;
+  }
 
   return (
-    <>
-    <p>Hi there</p>
-    </>
-  )
+    <HomePage user={user} />
+  );
 }
 
-export default App
+export default App;
