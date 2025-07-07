@@ -6,7 +6,6 @@ function HomePage() {
   return (
     <div style={{ padding: '2rem' }}>
       <h1>Welcome, {user}!</h1>
-      <p>This is your next project 👑</p>
     </div>
   );
 }
