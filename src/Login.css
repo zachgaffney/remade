@@ -50,3 +50,11 @@ button:hover {
 .error {
   color: red;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'Segoe UI', sans-serif;
+}

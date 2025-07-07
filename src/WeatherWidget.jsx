@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchWeather } from './weatherSlice';
 import { useEffect } from 'react';
+import './WeatherWidget.css';
 
 function WeatherWidget() {
   const dispatch = useDispatch();
@@ -15,10 +16,10 @@ function WeatherWidget() {
 
   return (
     <div style={{ padding: '1rem', borderRadius: '8px' }}>
-  
+
       {data && (
         <>
-          <p>Seattle: {(data.temperature * 9/5) + 32}°F</p>
+          <p id="seattle-weather">Seattle: {(data.temperature * 9/5) + 32}°F</p>
         </>
       )}
     </div>
