@@ -13,7 +13,7 @@ function HomePage() {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          padding: '1.5rem 2rem',
+          padding: '1rem 2rem',
           backgroundColor: 'var(--card)',
           borderBottom: '1px solid var(--border)',
           boxShadow: '0 2px 5px rgba(0, 0, 0, 0.3)',

@@ -15,10 +15,10 @@ function WeatherWidget() {
 
   return (
     <div style={{ padding: '1rem', borderRadius: '8px' }}>
-      <h3>🌤️ Seattle Weather</h3>
+  
       {data && (
         <>
-          <p>Temperature: {data.temperature}°C</p>
+          <p>Seattle: {(data.temperature * 9/5) + 32}°F</p>
         </>
       )}
     </div>
