@@ -18,21 +18,23 @@ function Login() {
 
   return (
     <div className="login-container">
-      <img src="/seattle-mariners-logo-black-and-white.png" alt="Logo" className="logo" />
-      <input
-        type="text"
-        placeholder="Enter your first name"
-        value={firstName}
-        onChange={(e) => setFirstName(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Enter password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleLogin}>Login</button>
-      {error && <p className="error">{error}</p>}
+      <div className="login-form">
+        <img src="/seattle-mariners-logo-black-and-white.png" alt="Logo" className="logo" />
+        <input
+          type="text"
+          placeholder="Enter your first name"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Enter password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button onClick={handleLogin}>Login</button>
+        {error && <p className="error">{error}</p>}
+      </div>
     </div>
   );
 }
